@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="ContactPage.css">
+    <title>Contact Us</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("a").hover(function(){
+                $(this).css("color", "blue");
+                $(this).css("transition", "0.3s");
+
+                }, function(){
+                $(this).css("color", "white");
+             });
+        });
+    </script>
+</head>
+<body>
+    <div class="heading_container">
+        <div class="logo"><img src="images/logo.png" width="150"></div>
+        <div class="cart"><img src="images/cart.png" width="60"></div>
+        <h1 class="title">Contact Us</div>
+    </div>
+
+    <div class="contacts_container">
+        <div class="aligned">
+            <img src="images/mailbox.png" width="75">
+            <div class="text"><a href = "mailto: customerservice@leveluptech.com">customerservice@leveluptech.com</a></div>
+        </div>
+        <div class="aligned">
+            <img src="images/Phone.png" width="75">
+            <div class="text">123 - 456 - 7890</div>
+        </div>
+        <div class="aligned">
+            <img src="images/marker.png" width="75">
+            <div class="text"><a href = "https://goo.gl/maps/iBYaqdcZuPaHZdw69">2 N Hill Rd, Medford, MA 02155</a></div>
+        </div>
+        <div class="aligned">
+            <img src="images/clock.png" width="75">
+            <div class="text">Tuesdays & Thursdays: 12:00 - 1:15PM</div>
+        </div>
+    </div>
+    
+</body>
+</html>
