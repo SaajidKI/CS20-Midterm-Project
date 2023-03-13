@@ -18,13 +18,12 @@ body {
 .aligned {
   display: flex;
   align-items: center;
-  margin-left: 20%; /* centers text in box */
+  margin-left: 20%;
   margin-top: 30px;
   padding-top: 20px;
 }
 
 .text {
-  text-decoration: none;
   color: white;
   font-family: "gill sans", sans-serif;
   padding-left: 50px;
@@ -33,6 +32,8 @@ body {
 }
 
 #hover {
+  color: white;
+  text-decoration: none;
   transition: 0.3s;
 }
 
@@ -40,17 +41,28 @@ body {
   color: #4343f1;
 }
 
+h2 {
+  margin: 0;
+  font-family: "gill sans", sans-serif;
+  font-size: 60px;
+  color: lightblue;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 #form_container {
   border-style: double;
   margin-left: 200px;
   margin-right: 200px;
-  margin: 100px 200px 100px 200px
+  margin: 30px 200px 100px 200px;
+  padding: 10px;
 }
 
 form {
   margin-left: 200px;
   margin-right: 200px;
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
