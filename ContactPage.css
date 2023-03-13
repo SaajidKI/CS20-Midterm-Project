@@ -6,7 +6,7 @@ body {
 .contacts_container {
   background-color: #110729;
   height: 500px;
-  margin: 30px 200px 0px 200px;
+  margin: 30px 200px 30px 200px;
   text-align: center;
   padding-bottom: 5%;
   padding-top: 10px;
@@ -29,9 +29,6 @@ body {
   font-weight: 600;
 }
 
-h1 {
-  margin-left: 38.6%;
-}
 #hover {
   transition: 0.3s;
 }

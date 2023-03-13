@@ -10,12 +10,12 @@ nav {
 }
 
 .logo {
-  padding: 15px;
+  padding: 25px;
   float: left;
 }
 
 .cart {
-  padding: 25px;
+  padding: 35px;
   float: right;
 }
 
@@ -23,9 +23,12 @@ h1 {
   margin: 0;
   font-family: "gill sans", sans-serif;
   font-size: 60px;
-  color: white;
+  color: lightblue;
   padding: 15px;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ul {
@@ -76,5 +79,12 @@ ul li a:hover::before {
 }
 
 footer {
-  margin-left: 10px;
+  color: lightblue;
+  background-color: #110729;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  width: auto;
+  text-align: center;
+  position:relative;
 }
