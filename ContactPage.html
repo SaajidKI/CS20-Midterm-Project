@@ -4,8 +4,8 @@
     <link rel="stylesheet" type="text/css" href="ContactPage.css" />
     <link rel="stylesheet" type="text/css" href="header.css" />
     <title>Contact Us</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="tech company, contact page"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="tech company, contact page" />
     <title>Contact Us | LevelUp Tech</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
@@ -20,11 +20,27 @@
       <h1 class="title">Contact Us</h1>
       <nav>
         <ul>
-          <li style="--clr:#FFC107"><a href="ProductsOne.html" data-text="&nbsp;Keyboards">&nbsp;Keyboards</a></li>
-          <li style="--clr:#4CAF50"><a href="ProductsTwo.html" data-text="&nbsp;Headsets">&nbsp;Headsets</a></li>
-          <li style="--clr:#2196F3"><a href="AboutPage.html" data-text="&nbsp;About">&nbsp;About</a></li>
-          <li style="--clr:#9C27B0"><a href="ContactPage.html" data-text="&nbsp;Contact">&nbsp;Contact</a></li>
-          <li style="--clr:#FF5722"><a href="BlogPage.html" data-text="&nbsp;Blog">&nbsp;Blog</a></li>
+          <li style="--clr: #ffc107">
+            <a href="ProductsOne.html" data-text="&nbsp;Keyboards"
+              >&nbsp;Keyboards</a
+            >
+          </li>
+          <li style="--clr: #4caf50">
+            <a href="ProductsTwo.html" data-text="&nbsp;Headsets"
+              >&nbsp;Headsets</a
+            >
+          </li>
+          <li style="--clr: #2196f3">
+            <a href="AboutPage.html" data-text="&nbsp;About">&nbsp;About</a>
+          </li>
+          <li style="--clr: #9c27b0">
+            <a href="ContactPage.html" data-text="&nbsp;Contact"
+              >&nbsp;Contact</a
+            >
+          </li>
+          <li style="--clr: #ff5722">
+            <a href="BlogPage.html" data-text="&nbsp;Blog">&nbsp;Blog</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -55,8 +71,53 @@
         <div class="text">Tuesdays & Thursdays: 12:00 - 1:15PM</div>
       </div>
     </div>
+    <div id="form_container">
+      <form id="contact-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="reason">Reason for contacting:</label>
+        <select id="reason" name="reason">
+          <option value="General Inquiry">General Inquiry</option>
+          <option value="Technical Support">Technical Support</option>
+          <option value="Sales">Sales</option>
+        </select><br><br>
+        
+        <label>Contact Method:</label><br>
+        <div id="radio_buttons">
+          <input type="radio" id="phone" name="contact" value="phone">
+        <label for="phone">Phone</label><br>
+        <input type="radio" id="in-person" name="contact" value="in-person">
+        <label for="in-person">In-person</label><br><br>
+        </div>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="5"></textarea><br><br>
+      
+          <input id="submit_btn" type="button" value="Submit" onclick=validateEmail()>
+        
+      </form>
+    </div>
+    
+    <script>
+  function validateEmail() {
+    var email = document.getElementById("email").value;
+    var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!pattern.test(email)) {
+      alert("Please enter a valid email address");
+    }
+  }
+</script>
+
+    </script>
     <footer>
       <p>Copyright &copy; 2023 LevelUp Tech Inc.</p>
     </footer>
   </body>
+  <script>
+    
+  </script>
 </html>
