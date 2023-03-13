@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="HomePage.css">
-    <title>Home Page | LevelUp Tech</title>
-</head>
-<body>
-    <header class="title">
-        <video src="background.mp4" autoplay loop muted></video>
-        <h1 class="text">LevelUp Tech</h1>
-    </header>
-
-    <nav>
+  <head>
+    <link rel="stylesheet" type="text/css" href="HomePage.css" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <title>LevelUp Tech Inc.</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="heading_container">
+      <a href="HomePage.html"
+        ><div class="logo"><img src="images/logo.png" width="150" /></div
+      ></a>
+      <a href="Checkout.html"
+        ><div class="cart"><img src="images/cart.png" width="60" /></div
+      ></a>
+      <h1 class="title">LevelUp Tech</h1>
+      <nav>
         <ul>
-            <li style="--clr:#00ade1"><a href="HomePage.html" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a></li>
-            <li style="--clr:#00dc82"><a href="#" data-text="&nbsp;About">&nbsp;About&nbsp;</a></li>
-            <li style="--clr:#ffdd1c"><a href="ContactPage.html" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a></li>
+          <li style="--clr:#FFC107"><a href="ProductsOne.html" data-text="&nbsp;Keyboards">&nbsp;Keyboards</a></li>
+          <li style="--clr:#4CAF50"><a href="ProductsTwo.html" data-text="&nbsp;Headsets">&nbsp;Headsets</a></li>
+          <li style="--clr:#2196F3"><a href="AboutPage.html" data-text="&nbsp;About">&nbsp;About</a></li>
+          <li style="--clr:#9C27B0"><a href="ContactPage.html" data-text="&nbsp;Contact">&nbsp;Contact</a></li>
+          <li style="--clr:#FF5722"><a href="BlogPage.html" data-text="&nbsp;Blog">&nbsp;Blog</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+
+    <main>
+        <div class="main_container">
+          <h2>Featured Products</h2>
+          <div class="product_container">
+            <div class="card">
+              <img src="images/keyboard1.png" alt="Keyboards" />
+              <h3>Keyboards</h3>
+              <p>Introducing our top-of-the-line gaming keyboards, designed to take 
+                your gaming experience to the next level. Our keyboards are built 
+                with the latest technology to provide you with a competitive edge 
+                during gameplay. With customizable backlighting, programmable keys, 
+                and ergonomic design, our keyboards are the perfect fit for any gamer.</p>
+              <a href="#" class="btn">Buy Now!</a>
+            </div>
+            <div class="card">
+              <img src="images/headset1.png" alt="Headsets" />
+              <h3>Headsets</h3>
+              <p>Introducing our premium gaming headsets, designed to elevate your 
+                audio experience to new heights. Our headsets are engineered with 
+                cutting-edge technology to immerse you in the game and provide 
+                crystal-clear audio. With customizable sound settings, and comfortable 
+                designs, our headsets deliver the ultimate gaming audio experience.</p>
+              <a href="#" class="btn">Buy Now!</a>
+            </div>
+          </div>
+        </div>
+    </main>
 
     <footer>
-        <p>Copyright &copy; 2023 LevelUp Tech Inc.</p>
+      <p>&copy; 2023 LevelUp Tech Inc. All Rights Reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
