@@ -10,6 +10,7 @@ body {
     margin: 20px;
     text-align: right;
   }
+
   .items {
     display: flex;
     align-items: center;
@@ -21,11 +22,14 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
   }
+
   .items img {
     width: 100px;
     height: 100px;
     margin-right: 20px;
+    border-radius: 10px;
   }
+
   .total {
     margin-top: 20px;
     text-align: right;

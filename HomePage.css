@@ -24,6 +24,7 @@ main {
   font-size: 1.125rem;
   line-height: 1.8;
   color: #363846;
+  text-align: center;
 }
 
 .main_container h3 {
@@ -88,7 +89,7 @@ main {
 
 .card p {
     color: #110729;
-    font-size: 14px;
+    font-size: 17px;
     margin: 0;
     padding: 10px 0;
 }
