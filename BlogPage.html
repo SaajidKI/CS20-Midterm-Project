@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="standard_heading_style.css" />
+    <title>Blog Posts</title>
+    <style>
+      nav {
+        margin-right: 10%;
+      }
+      h1 {
+        margin-left: 32%;
+      }
+      ul {
+        margin-left: 26.67%;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .postsContainer {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        display: none;
+      }
+
+      .post {
+        margin-bottom: 40px;
+      }
+
+      .post h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .post p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      .post .author {
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: #999;
+      }
+
+      .post .date {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading_container">
+      <a href="HomePage.html"><div class="logo"><img src="images/logo.png" width="150"></div></a>
+    <a href="checkout.html"><div class="cart"><img src="images/cart.png" width="60"></div></a>
+      <h1 class="title">LevelUp Tech Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="ProductsOne.html">Keyboards</a></li>
+          <li><a href="ProductsTwo.html">Headsets</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="ContactPage.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="postsContainer">
+      <div id="blog-posts"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        const posts = [
+          {
+            title: "Technology for the Kids",
+            content:
+              "At LevelUp Tech, we believe that technology can play a transformative role in how children learn and engage with the world around them. With the rise of digital technology, it has become easier than ever to create immersive, interactive, and engaging educational experiences for children. From virtual field trips and gamified learning platforms to personalized learning experiences and adaptive curricula, technology is helping kids learn in ways that were previously unimaginable. At LevelUp Tech, we are dedicated to harnessing the power of technology to create innovative solutions that help kids learn more effectively and enjoyably. By combining cutting-edge hardware and software with pedagogical expertise, we are committed to providing children with the tools they need to thrive in an increasingly complex and dynamic world.",
+            author: "Andy Xu",
+            date: "March 10, 2023",
+          },
+          {
+            title: "Technology and the Environment",
+            content:
+              "As concerns over climate change and environmental sustainability continue to grow, technology is playing an increasingly important role in addressing these challenges. At LevelUp Tech, we recognize the crucial role that technology can play in protecting our planet and are committed to developing solutions that help preserve the environment. From renewable energy sources to smart grids and energy-efficient devices, technology is driving positive change in the world. At LevelUp Tech, we are dedicated to using technology to help create a more sustainable future for all. Whether it's through innovative software, hardware, or infrastructure solutions, we are constantly exploring new ways to leverage technology to protect the environment and create a more sustainable world.",
+            author: "Saajid Islam",
+            date: "February 19, 2023",
+          },
+          {
+            title: "Our Newest Product",
+            content:
+              "We are thrilled to announce the launch of our latest tech product, which is set to revolutionize the industry. With its cutting-edge features and unparalleled performance, this product is designed to meet the evolving needs of our customers. We have leveraged the latest technologies and our expertise to create a product that is both intuitive and innovative. Our team has worked tirelessly to bring this product to market, and we couldn't be more excited to share it with you. We are confident that our new tech product will exceed your expectations and empower you to achieve your goals like never before. Thank you for your continued support, and we look forward to your feedback on this exciting new offering.",
+            author: "Jyoti Bhardwaj",
+            date: "January 29, 2023",
+          },
+          {
+            title: "About ByteFuse Inc.",
+            content:
+              "We at LevelUp Tech are always keeping a close eye on the latest developments and innovations in the tech industry, and one of the companies that has been making waves lately is our competitors at ByteFuse Inc. Their recent product launches and partnerships have been impressive, and we commend them for their hard work and dedication to advancing the field. While we may be competitors, we also believe in supporting and recognizing excellence in our industry. We look forward to continuing to push each other to new heights and drive innovation forward for the benefit of all.",
+            author: "Marti",
+            date: "January 5, 2023",
+          },
+        ];
+
+        const container = $(".postsContainer");
+
+        for (let i = 0; i < posts.length; i++) {
+          const post = posts[i];
+          const postDiv = $("<div>").addClass("post");
+          const titleElement = $("<h2>").text(post.title);
+          const contentElement = $("<p>").text(post.content);
+          const authorElement = $("<div>")
+            .addClass("author")
+            .text(`By ${post.author}`);
+          const dateElement = $("<div>").addClass("date").text(post.date);
+
+          postDiv.append(
+            titleElement,
+            dateElement,
+            contentElement,
+            authorElement
+          );
+          container.append(postDiv);
+        }
+        container.delay(500).fadeIn(1500);
+      });
+    </script>
+  </body>
+</html>
