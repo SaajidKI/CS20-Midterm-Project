@@ -1,34 +1,40 @@
 body {
-    margin: 0 auto;
-    padding: 0;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .contacts_container {
-    background-color:#110729;
-    height: 500px;
-    margin: 30px 200px 0px 200px;
-    text-align: center;
-    padding-bottom: 5%;
-    padding-top: 10px; 
+  background-color: #110729;
+  height: 500px;
+  margin: 30px 200px 0px 200px;
+  text-align: center;
+  padding-bottom: 5%;
+  padding-top: 10px;
 }
 
 .aligned {
-    display: flex;
-    align-items: center;
-    margin-left: 20%; /* centers text in box */
-    margin-top: 30px; 
-    padding-top: 20px; 
+  display: flex;
+  align-items: center;
+  margin-left: 20%; /* centers text in box */
+  margin-top: 30px;
+  padding-top: 20px;
 }
-  
+
 .text {
-    text-decoration: none;
-    color: white;
-    font-family: 'gill sans', sans-serif;
-    padding-left: 50px;
-    font-size: 30px; 
-    font-weight: 600;
+  text-decoration: none;
+  color: white;
+  font-family: "gill sans", sans-serif;
+  padding-left: 50px;
+  font-size: 30px;
+  font-weight: 600;
 }
 
-
-
-
+h1 {
+  margin-left: 38.6%;
+}
+#hover {
+  transition: 0.3s;
+}
+#hover:hover {
+  color: blue;
+}

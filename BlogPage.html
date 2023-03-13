@@ -2,17 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="standard_heading_style.css" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
     <title>Blog Posts</title>
     <style>
-      nav {
-        margin-right: 10%;
-      }
       h1 {
         margin-left: 32%;
-      }
-      ul {
-        margin-left: 26.67%;
       }
       body {
         margin: 0;
@@ -50,12 +44,26 @@
       .post .date {
         font-size: 16px;
       }
+      #show {
+        animation: cssAnimation 0s 0.6s forwards;
+        opacity: 0;
+      }
+
+      @keyframes cssAnimation {
+        to {
+          opacity: 1;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="heading_container">
-      <a href="HomePage.html"><div class="logo"><img src="images/logo.png" width="150"></div></a>
-    <a href="checkout.html"><div class="cart"><img src="images/cart.png" width="60"></div></a>
+      <a href="HomePage.html"
+        ><div class="logo"><img src="images/logo.png" width="150" /></div
+      ></a>
+      <a href="checkout.html"
+        ><div class="cart"><img src="images/cart.png" width="60" /></div
+      ></a>
       <h1 class="title">LevelUp Tech Blog</h1>
       <nav>
         <ul>
@@ -63,12 +71,16 @@
           <li><a href="ProductsTwo.html">Headsets</a></li>
           <li><a href="AboutUs.html">About Us</a></li>
           <li><a href="ContactPage.html">Contact</a></li>
+          <li><a href="BlogPage.html">Blog</a></li>
         </ul>
       </nav>
     </div>
     <div class="postsContainer">
       <div id="blog-posts"></div>
     </div>
+    <footer id="show">
+      <p>Copyright © LevelUpTech 2023</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>

@@ -1,63 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="ContactPage.css">
-    <link rel="stylesheet" type="text/css" href="standard_heading_style.css">
+  <head>
+    <link rel="stylesheet" type="text/css" href="ContactPage.css" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
     <title>Contact Us</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <style>
-    h1 {
-        margin-left: 38.5%;
-    }
-    ul {
-        margin-left: 24%;
-      }
-    </style>
-    <script>
-        $(document).ready(function(){
-            $(".text").hover(function(){
-                $(this).css("color", "blue");
-                $(this).css("transition", "0.3s");
-
-                }, function(){
-                $(this).css("color", "white");
-             });
-        });
-    </script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="heading_container">
-        <a href="HomePage.html"><div class="logo"><img src="images/logo.png" width="150"></div></a>
-    <a href="checkout.html"><div class="cart"><img src="images/cart.png" width="60"></div></a>
-        <h1 class="title">Contact Us</h1>
-        <nav>
-          <ul>
-            <li><a href="ProductsOne.html">Keyboards</a></li>
-            <li><a href="ProductsTwo.html">Headsets</a></li>
-            <li><a href="AboutUs.html">About Us</a></li>
-            <li><a href="ContactPage.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      <a href="HomePage.html"
+        ><div class="logo"><img src="images/logo.png" width="150" /></div
+      ></a>
+      <a href="checkout.html"
+        ><div class="cart"><img src="images/cart.png" width="60" /></div
+      ></a>
+      <h1 class="title">Contact Us</h1>
+      <nav>
+        <ul>
+          <li><a href="ProductsOne.html">Keyboards</a></li>
+          <li><a href="ProductsTwo.html">Headsets</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="ContactPage.html">Contact</a></li>
+          <li><a href="BlogPage.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <div class="contacts_container">
-        <div class="aligned">
-            <img src="images/mailbox.png" width="75">
-            <div class="text"><a href = "mailto: customerservice@leveluptech.com">customerservice@leveluptech.com</a></div>
+      <div class="aligned">
+        <img src="images/mailbox.png" width="75" />
+        <div class="text">
+          <a id="hover" href="mailto: customerservice@leveluptech.com"
+            >customerservice@leveluptech.com</a
+          >
         </div>
-        <div class="aligned">
-            <img src="images/Phone.png" width="75">
-            <div class="text">123 - 456 - 7890</div>
+      </div>
+      <div class="aligned">
+        <img src="images/Phone.png" width="75" />
+        <div class="text">123 - 456 - 7890</div>
+      </div>
+      <div class="aligned">
+        <img src="images/marker.png" width="75" />
+        <div class="text">
+          <a id="hover" href="https://goo.gl/maps/1hD6mg8S4UMV4kY56"
+            >2 N Hill Rd, Medford, MA 02155</a
+          >
         </div>
-        <div class="aligned">
-            <img src="images/marker.png" width="75">
-            <div class="text"><a href = "https://goo.gl/maps/1hD6mg8S4UMV4kY56">2 N Hill Rd, Medford, MA 02155</a></div>
-        </div>
-        <div class="aligned">
-            <img src="images/clock.png" width="75">
-            <div class="text">Tuesdays & Thursdays: 12:00 - 1:15PM</div>
-        </div>
+      </div>
+      <div class="aligned">
+        <img src="images/clock.png" width="75" />
+        <div class="text">Tuesdays & Thursdays: 12:00 - 1:15PM</div>
+      </div>
     </div>
-    
-</body>
+    <footer>
+      <p>Copyright © LevelUpTech 2023</p>
+    </footer>
+  </body>
 </html>
