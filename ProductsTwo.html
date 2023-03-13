@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="productStyle.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <style>
+      .clicked {
+        background-color: green;
+        color: white;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #444;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+    </style>
+  </head>
+
+  <div class="heading_container">
+    <a href="HomePage.html"><div class="logo"><img src="images/logo.png" width="150"></div></a>
+    <a href="checkout.html"><div class="cart"><img src="images/cart.png" width="60"></div></a>
+    <h1 class="title">Products</h1>
+    <nav>
+        <ul>
+          <li><a href="ProductsOne.html">Keyboards</a></li>
+          <li><a href="ProductsTwo.html">Headsets</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="ContactPage.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+    <main>
+      <h2>Headsets</h2>
+      <ul class="products">
+        <li>
+          <img src="images/headsetOne.jpg" alt="Keyboard 1" width="100%" height=auto>
+          <h3>TitanTech HyperFlux Pro Gaming Headset</h3>
+          <p style="color:gray;"> $129.99, </p>
+          <p>The TitanTech HyperFlux Pro Gaming Headset is the ultimate choice for gamers seeking high-quality audio and immersive gameplay. With its advanced 7.1 surround sound technology, this headset delivers crystal clear audio and realistic sound effects, allowing you to fully immerse yourself in your game. The lightweight and comfortable design ensures that you can wear it for extended gaming sessions without any discomfort. The headset also comes with a noise-cancelling microphone that delivers clear and precise communication with your teammates. Whether you're a casual gamer or a professional eSports competitor, the TitanTech HyperFlux Pro Gaming Headset will take your gaming experience to the next level.</p>
+          <button id="Button1">Add to Cart</button>
+        </li>
+        <li>
+          <img src="images/headset2.jpg" alt="Keyboard 2" width="100%" height="auto">
+          <h3>CyberWave Raptor X Gaming Headset</h3>
+          <p style="color:gray;">  $149.99 </p>
+          <p> The ultimate gaming accessory for avid gamers. Equipped with advanced noise-cancelling technology, this headset delivers crystal-clear sound quality, allowing you to hear even the slightest in-game sounds with precision. The lightweight and comfortable design of the headset ensures that you can wear it for hours without any discomfort. Additionally, the built-in microphone offers excellent voice clarity, making communication with teammates seamless during intense gaming sessions. With its durable construction, the CyberWave Raptor X Gaming Headset can withstand even the most demanding gaming environments. Take your gaming experience to the next level with the CyberWave Raptor X Gaming Headset.</p>
+          <button id="Button2">Add to Cart</button>
+        </li>
+        <li>
+          <img src="images/headset3.jpg" alt="Keyboard 3" width="100%" height="auto">
+          <h3>NovaTech Scorpion Gaming Headset  </h3>
+          <p style="color:gray;"> $99.99 </p>
+          <p> The ultimate gaming accessory for avid gamers. Equipped with advanced noise-cancelling technology, this headset delivers crystal-clear sound quality, allowing you to hear even the slightest in-game sounds with precision. The lightweight and comfortable design of the headset ensures that you can wear it for hours without any discomfort. Additionally, the built-in microphone offers excellent voice clarity, making communication with teammates seamless during intense gaming sessions. With its durable construction, the CyberWave Raptor X Gaming Headset can withstand even the most demanding gaming environments. Take your gaming experience to the next level with the CyberWave Raptor X Gaming Headset.</p>
+          <button id="Button3">Add to Cart</button>
+        </li>
+      </ul>
+
+      <script>
+        const buttons = document.querySelectorAll("button");
+        buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+          button.classList.add("clicked");
+          button.innerHTML = "Go Checkout to Add!";
+          });
+        });
+      </script>
+    </main>
+
+    <footer>
+      <p>Copyright © LevelUpTech 2023</p>
+    </footer>
+  </body>
+</html>
