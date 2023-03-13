@@ -6,8 +6,9 @@ body {
 .checkout-cart {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     margin: 20px;
+    text-align: right;
   }
   .items {
     display: flex;
