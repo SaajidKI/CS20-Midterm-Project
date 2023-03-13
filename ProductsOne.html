@@ -3,11 +3,21 @@
   <head>
     <link rel="stylesheet" type="text/css" href="productStyle.css">
     <link rel="stylesheet" type="text/css" href="header.css">
-    <title>Keyboards | LevelUp Tech</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
     <style>
       .clicked {
         background-color: green;
         color: white;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #444;
+        margin-bottom: 20px;
+        text-align: justify;
       }
 
     </style>
@@ -28,24 +38,27 @@
 </div>
 
     <main>
-      <h2>Our Products</h2>
+      <h2>Keyboards</h2>
       <ul class="products">
         <li>
-          <img src="keyboardOne.jpg" alt="Keyboard 1" width="100%" height=auto>
-          <h3>Mechanical Gaming Keyboard</h3>
-          <p style="color:gray;"> Cherry MX Blue | Cherry MX Brown | Cherry MX Red </p>
+          <img src="images/keyboardone.jpg" alt="Keyboard 1" width="100%" height=auto>
+          <h3>VorTech Stealthblade Mechanical Keyboard</h3>
+          <p style="color:gray;"> $89.99 </p>
+          <p> The perfect gaming keyboard for those seeking precision and speed. The backlit keys and tactile switches provide an immersive and responsive gaming experience, while the sturdy construction ensures durability and comfort during extended use. With its customizable RGB lighting and programmable macro keys, the VorTech Stealthblade Mechanical Keyboard is a versatile tool for any gamer. Whether you're a casual player or a professional eSports competitor, this keyboard will give you the edge you need to dominate your opponents.</p>
           <button id="Button1">Add to Cart</button>
         </li>
         <li>
-          <img src="keyboardTwo.jpg" alt="Keyboard 2" width="100%" height="auto">
-          <h3>Wireless Mechanical Keyboard</h3>
-          <p style="color:gray;"> Cherry MX Blue | Cherry MX Brown | Cherry MX Red </p>
+          <img src="images/keyboardtwo.jpg" alt="Keyboard 2" width="100%" height="auto">
+          <h3>Electronix Elite Prodigy Hyperblade Keyboard</h3>
+          <p style="color:gray;"> $139.99 </p>
+          <p> Designed with the latest technology, this keyboard provides a responsive and precise gaming experience, with the programmable macro keys to give you the speed and accuracy you need to win every game. Built with top-quality materials, this keyboard is both sturdy and comfortable, ensuring a perfect grip and a comfortable typing experience every time you use it. Whether you're a casual gamer or an eSports competitor, the Electronix Elite Prodigy Hyperblade Keyboard is the perfect tool to take your gaming to the next level.</p>
           <button id="Button2">Add to Cart</button>
         </li>
         <li>
-          <img src="keyboardThree.jpg" alt="Keyboard 3" width="100%" height="auto">
-          <h3>Compact Mechanical Keyboard</h3>
-          <p style="color:gray;"> Cherry MX Blue | Cherry MX Brown | Cherry MX Red </p>
+          <img src="images/keyboardthree.jpg" alt="Keyboard 3" width="100%" height="auto">
+          <h3>NeonStrike Pro Gaming Keyboard </h3>
+          <p style="color:gray;"> $59.99 </p>
+          <p> The best option for budget-conscious gamers. This keyboard offers a responsive and immersive gaming experience without the hefty price tag. With its sleek design and lightweight construction, it's easy to transport and use for extended gaming sessions. The NeonStrike Pro Gaming Keyboard is a versatile tool for any gamer seeking precision and speed, whether you're a casual player or a professional eSports competitor. Get the competitive edge you need without breaking the bank with the NeonStrike Pro Gaming Keyboard.</p>
           <button id="Button3">Add to Cart</button>
         </li>
       </ul>
@@ -55,7 +68,7 @@
         buttons.forEach(function(button) {
         button.addEventListener("click", function() {
           button.classList.add("clicked");
-          button.innerHTML = "Added!";
+          button.innerHTML = "Go Checkout to Add!";
           });
         });
       </script>
