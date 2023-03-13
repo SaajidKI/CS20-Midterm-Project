@@ -3,19 +3,81 @@ main {
     font-size: large;
 }
 
+.main_container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px #adbbdc;
+  border-radius: 10px;
+}
+
+.main_container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.main_container p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #363846;
+}
+
+.main_container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.testimonial_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.testimonial {
+  flex-basis: 50%;
+  padding: 20px;
+  margin: 0 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #7084b3;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.testimonial p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.testimonial .author {
+  font-size: 1rem;
+  font-style: italic;
+  color: #777;
+}
+
 .card {
     background-color: #adbbdc;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px 0 #00000033;
     display: inline-block;
     margin: 20px;
     padding: 20px;
     text-align: center;
-    width: 300px;
+    width: 400px;
 }
 
 .card img {
-    height: 200px;
+    height: 300px;
     width: 100%;
 }
 
@@ -32,6 +94,7 @@ main {
 }
 
 .btn {
+    transition: 0.5s;
     background-color: #52803f;
     border: none;
     color: white;
@@ -40,6 +103,11 @@ main {
     text-decoration: none;
     display: inline-block;
     margin: 20px;
-    cursor: pointer;
     border-radius: 5px;
+}
+
+.btn:hover {
+    transition: 0.5s;
+    background-color: #395f29;
+    transform: translateY(-3px);
 }

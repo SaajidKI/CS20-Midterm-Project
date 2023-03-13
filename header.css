@@ -31,9 +31,9 @@ h1 {
   color: lightblue;
   padding: 15px;
   font-weight: 600;
-  display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 ul {
