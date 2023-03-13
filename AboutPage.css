@@ -1,0 +1,38 @@
+main { 
+    text-align: center;
+    font-size: large;
+}
+
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  column-gap: 150px;
+  column-width: 250px;
+} */
+
+.card {
+    background-color: #adbbdc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #00000033;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: auto;
+}
+
+.card h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.card p {
+    color: #110729;
+    font-size: 17px;
+    margin: 0;
+    padding: 10px 0;
+}
