@@ -23,19 +23,28 @@
     </style>
   </head>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
   <div class="heading_container">
-    <a href="HomePage.html"><div class="logo"><img src="images/logo.png" width="150"></div></a>
-    <a href="checkout.html"><div class="cart"><img src="images/cart.png" width="60"></div></a>
+    <a href="HomePage.html"
+      ><div class="logo"><img src="images/logo.png" width="150" /></div
+    ></a>
+    <a href="checkout.html"
+      ><div class="cart"><img src="images/cart.png" width="60" /></div
+    ></a>
     <h1 class="title">Products</h1>
     <nav>
-        <ul>
-          <li><a href="ProductsOne.html">Keyboards</a></li>
-          <li><a href="ProductsTwo.html">Headsets</a></li>
-          <li><a href="AboutUs.html">About Us</a></li>
-          <li><a href="ContactPage.html">Contact</a></li>
-        </ul>
+      <ul>
+        <li style="--clr:#FFC107"><a href="ProductsOne.html" data-text="&nbsp;Keyboards">&nbsp;Keyboards</a></li>
+        <li style="--clr:#4CAF50"><a href="ProductsTwo.html" data-text="&nbsp;Headsets">&nbsp;Headsets</a></li>
+        <li style="--clr:#2196F3"><a href="AboutPage.html" data-text="&nbsp;About">&nbsp;About</a></li>
+        <li style="--clr:#9C27B0"><a href="ContactPage.html" data-text="&nbsp;Contact">&nbsp;Contact</a></li>
+        <li style="--clr:#FF5722"><a href="BlogPage.html" data-text="&nbsp;Blog">&nbsp;Blog</a></li>
+      </ul>
     </nav>
-</div>
+  </div>
 
     <main>
       <h2>Headsets</h2>
@@ -58,7 +67,7 @@
           <img src="images/headset3.jpg" alt="Keyboard 3" width="100%" height="auto">
           <h3>NovaTech Scorpion Gaming Headset  </h3>
           <p style="color:gray;"> $99.99 </p>
-          <p> The ultimate gaming accessory for avid gamers. Equipped with advanced noise-cancelling technology, this headset delivers crystal-clear sound quality, allowing you to hear even the slightest in-game sounds with precision. The lightweight and comfortable design of the headset ensures that you can wear it for hours without any discomfort. Additionally, the built-in microphone offers excellent voice clarity, making communication with teammates seamless during intense gaming sessions. With its durable construction, the CyberWave Raptor X Gaming Headset can withstand even the most demanding gaming environments. Take your gaming experience to the next level with the CyberWave Raptor X Gaming Headset.</p>
+          <p> Introducing the NovaTech Scorpion Gaming Headset, designed for gamers who demand superior audio quality and comfort during extended gameplay. With its advanced noise-cancelling technology, this headset delivers crystal-clear sound that allows you to fully immerse yourself in the game. The lightweight and durable construction ensures that you can wear the headset for hours without feeling weighed down, while the soft ear cups provide a comfortable fit. The NovaTech Scorpion Gaming Headset is compatible with all major gaming platforms, making it a versatile accessory for any gamer. Whether you're playing first-person shooters, MMOs, or racing games, this headset will elevate your gaming experience to the next level</p>
           <button id="Button3">Add to Cart</button>
         </li>
       </ul>
@@ -72,10 +81,11 @@
           });
         });
       </script>
+      
+   <footer>
+      <p>&copy; 2023 LevelUp Tech Inc. All Rights Reserved.</p>
+  </footer>
     </main>
 
-    <footer>
-      <p>Copyright © LevelUpTech 2023</p>
-    </footer>
   </body>
 </html>
