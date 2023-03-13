@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="checkout.css" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <title>Checkout | LevelUp Tech</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="heading_container">
+      <a href="HomePage.html"
+        ><div class="logo"><img src="images/logo.png" width="150" /></div
+      ></a>
+      <a href="checkout.html"
+        ><div class="cart"><img src="images/cart.png" width="60" /></div
+      ></a>
+      <h1 class="title">Checkout</h1>
+      <nav>
+        <ul>
+          <li style="--clr:#FFC107"><a href="ProductsOne.html" data-text="&nbsp;Keyboards">&nbsp;Keyboards</a></li>
+          <li style="--clr:#4CAF50"><a href="ProductsTwo.html" data-text="&nbsp;Headsets">&nbsp;Headsets</a></li>
+          <li style="--clr:#2196F3"><a href="AboutPage.html" data-text="&nbsp;About">&nbsp;About</a></li>
+          <li style="--clr:#9C27B0"><a href="ContactPage.html" data-text="&nbsp;Contact">&nbsp;Contact</a></li>
+          <li style="--clr:#FF5722"><a href="BlogPage.html" data-text="&nbsp;Blog">&nbsp;Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <!-- Creates a cart class and stores items in cart -->
+    <div class="checkout-cart">
+        <div class="items">
+            <img src="images/keyboardone.jpg" alt="Keyboard 1"> 
+            <div>
+                <h3>VorTech Stealthblade Mechanical Keyboard</h3>
+                <p>Price: $<span class="price">89.99</span></p>
+                <p>Quantity: <input type="number" min = "0" value="0"></p>
+            </div>
+        </div>
+        <div class="items">
+            <img src="images/keyboardtwo.jpg" alt="Keyboard 2"> 
+            <div>
+                <h3>Electronix Elite Prodigy Hyperblade Keyboard</h3>
+                <p>Price: $<span class="price">139.99</span></p>
+                <p>Quantity: <input type="number" min = "0" value="0"></p>
+            </div>
+        </div>
+        <div class="items">
+            <img src="images/keyboardthree.jpg" alt="Keyboard 3"> 
+            <div>
+                <h3>NeonStrike Pro Gaming Keyboard</h3>
+                <p>Price: $<span class="price">59.99</span></p>
+                <p>Quantity: <input type="number" min = "0" value="0"></p>
+            </div>
+        </div>
+        <div class="items">
+            <img src="images/headsetOne.jpg" alt="Headset 1"> 
+            <div>
+                <h3>TitanTech HyperFlux Pro Gaming Headset</h3>
+                <p>Price: $<span class="price">129.99</span></p>
+                <p>Quantity: <input type="number" min = "0" value="0"></p>
+            </div>
+        </div>
+        <div class="items">
+            <img src="images/headset2.jpg" alt="Headset 2"> 
+            <div>
+                <h3>CyberWave Raptor X Gaming Headset</h3>
+                <p>Price: $<span class="price">149.99</span></p>
+                <p>Quantity: <input type="number" min = "0" value="0"></p>
+            </div>
+        </div>
+        <div class="items">
+            <img src="images/headset3.jpg" alt="Headset 3"> 
+            <div>
+                <h3>NovaTech Scorpion Gaming Headset</h3>
+                <p>Price: $<span class="price">99.99</span></p>
+                <p>Quantity: <input type="number" min = "0" value="0"></p>
+            </div>
+        </div> 
+    
+        <div class="total">
+            <h2>Subtotal: $<span class="subtotal">0.00</span></h2>
+            <h2>Tax: $<span class="tax">0.00</span></h2>
+            <h2>Total: $<span class="total-amount">0.00</span><h2>
+        </div> 
+    </div> 
+
+    <script> 
+        const prices = document.querySelectorAll('.price');
+        const quant = document.querySelectorAll('input[type="number"]');
+        const subtotal = document.querySelector('.subtotal');
+        const tax = document.querySelector('.tax');
+        const total = document.querySelector('.total-amount');
+
+        let sub = 0;
+        let taxVal = 0;
+        let totalVal = 0;
+
+        for (let i = 0; i < quant.length; i++) {
+
+            quant[i].addEventListener('change', () => {
+                sub = 0;
+                taxVal = 0;
+                totalVal = 0;
+
+                for (let j = 0; j < prices.length; j++) {
+                    sub += parseFloat(prices[j].textContent) * parseInt(quant[j].value);
+                }
+
+                taxVal = sub * 0.0625;
+                totalVal = sub + taxVal;
+
+                subtotal.textContent = sub.toFixed(2);
+                tax.textContent = taxVal.toFixed(2);
+                total.textContent = totalVal.toFixed(2);
+
+            });
+        }
+
+        
+
+    </script>
+
+    <footer>
+      <p>Copyright © LevelUpTech 2023</p>
+    </footer>
+  </body>
+</html>
+
