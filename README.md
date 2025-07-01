@@ -1,9 +1,1 @@
-This project is a fully static, multi-page website built with HTML and CSS. It simulates an e-commerce experience, including:
-
-- A homepage, product pages, a blog section, and a checkout flow
-
-- A consistent navigation bar and footer across all pages
-
-- Responsive page layouts with styling handled through external CSS
-
-- A clean, modular structure that showcases front-end design and user flow understanding
+This project is a fully static, multi-page website built with HTML and CSS that simulates a complete e-commerce experience. It features a homepage, product listings, a blog section, and a checkout flow, all connected by a consistent navigation bar and footer. The site is designed with responsive layouts using external CSS, and its modular structure highlights a solid understanding of front-end design principles and user flow.
